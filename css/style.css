@@ -1,0 +1,542 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+  } 
+
+ .logo{
+	width: 150px;
+	height: 55px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00000043;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    
+}   
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+  /* display: inline-block; */
+  /* line-height: 80px; */
+    list-style: none;
+    padding: 15px;
+
+}
+nav ul li a{
+    font-family: valorant;
+    text-decoration: none;
+    list-style: none;
+    color: #9DD5B6; 
+}
+  .login{
+    width: 60px;
+	height: 60px;
+    margin-bottom: 15%;
+
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;   
+  }
+
+
+
+  .icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+/*--------media-nav----------*/
+@media (max-width: 992px){
+  nav{
+    padding: 1.3rem 5%;
+  }
+
+
+  /* .logo{
+    font-size: 30px;
+    display: block;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  } */
+}
+
+@media (max-width: 768px) {
+  .icons{
+    display: inline-flex;
+  }
+  nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 17.7rem;
+    background-color: red;
+  }
+  nav a{
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+}
+/* 
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  nav ul li{
+    display: block;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+
+} */
+
+/*--------media-nav----------*/
+
+
+
+  .lading{
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* justify-content: space-between; */
+    /* left: 20% */
+  }
+
+  
+
+
+
+.flex{
+    padding: 12%;
+  text-align: center;
+  margin-right: 30%;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  }
+  .valorant{
+    font-family: valorant;
+    color: #fff;
+    font-size: 35px;
+  } 
+  .underdog{
+    font-family: walter turncoat;
+    /* autour one */
+    color: #fff;
+    font-size: 28px;
+    /* text-align: center; */
+  }
+  
+  
+/*-------------actualite de gaming----------*/
+  .actualites{
+    background-color: #2A5254;
+    padding: 4%;
+  }
+   
+  .actualites h2{
+    color: #75B69E;
+    text-align: center;
+    
+  } 
+
+  .cadre{
+    background-color: #132F31;
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 2%;
+    margin: 0 auto;
+  }
+  .content{
+    background-color: #2a52540d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2%;
+    width: 80%;
+   
+  }
+
+
+  .item{
+    display: flex; 
+	  align-items: center;
+    margin: 50px;
+  }
+
+  .actualites img{
+    max-width: 100%;
+    margin-right: 5%;
+    border-radius: 2%;
+  }
+  .text{
+    font-family: 'Autour One';
+    text-align: justify;
+  }
+  
+  .text p{
+    font-family: walter turncoat;
+    font-size: 20px;
+  }
+
+  hr.ligne{
+    width: 80%;
+    margin: 0;
+    border: #2A5254;
+    border-top: 2px solid #2A5254;
+  }
+
+
+  /*--------------trailer-------------*/
+  .trailer{
+    background-color: #2a525434;
+    padding: 4%;
+  }
+
+ .trailer-flex{
+    display: flex;
+    align-items: center;
+
+ }
+ .trailer-flex iframe {
+  margin-right: 20px;
+}
+
+/*------------------magasins-----------*/
+.magasins{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 70%; */
+    /* height: 70%; */
+}
+
+/*-------------books-------------------*/
+.l7odoud-book{
+    /* font-size: 100%; */
+    text-align: justify;
+}
+
+.txt-des-book{
+    font-family: walter turncoat;
+    text-align: justify;
+    font-size: 18px;
+}
+
+
+.txt-des-book h3{
+  font-family: valorant;
+  text-align: justify;
+  font-size: 18px;
+}
+
+
+ /*----------------------games----------------*/
+
+ .nav-games {
+    background: linear-gradient(to bottom, #626B53, rgba(53, 68, 54, 0.241));
+}
+.games{
+    padding: 5%;
+}
+
+.games h2{
+    font-family: valorant;
+    color: #000000;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex;
+    flex-wrap: wrap; */
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+}
+.games a{
+    text-decoration: none;
+    color: black;
+}
+
+.grid-image{
+    text-align: center;
+    
+}
+
+.grid-image :hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+}
+.grid-image div{
+    
+    text-align: center;
+}
+
+.grid-image img{
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+}
+.games h3{
+    font-family: valorant;
+}
+
+.footer-games{
+    background: linear-gradient(to top, #626B53, rgba(53, 68, 54, 0.241));
+    color: #fff;
+    padding: 1% 0;
+    text-align: center;
+    font-family: valorant;
+}
+
+
+/*----------------game------------------*/
+.read-game {
+    padding: 5%;
+
+}
+.read-game h2{
+    font-family: valorant;
+    color: #000000;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-game{
+    display: flex;
+    align-items: center;
+    font-family: valorant;
+    /* width: 100%; */
+}
+
+
+
+.phrase{
+    font-family: walter turncoat;
+    font-size: 18px;
+}
+
+.flex-game img{
+    width: 100%;
+    margin-right: 5%;
+}
+
+.l7odoud {
+    text-align: justify;
+    line-height: 2;
+    /* font-size: 20%; */
+    /* padding: 16%; */
+}
+
+.txt-des{
+    text-align: justify;
+    line-height: 2;
+    /* font-size: 18px; */
+    font-family: walter turncoat;
+    font-size: 18px;
+}
+
+.txt-des h3{
+  font-family: valorant;
+}
+
+
+
+/*-------------------background login------------*/
+
+.bg-login{
+    background-image: url("../images/background-login.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-login{
+    background-color: #132f317d;
+}
+
+.liste-nav a{
+    color: #9DD5B6;
+}
+
+.login-form{
+    background-color: #2a52549b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 23%;
+    height: 60%;
+    margin: 3% ;
+    border-radius: 5%;
+    font-family: valorant;
+    color: #fff;
+}
+
+.login-form2{
+  background-color: #2a525481;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 25%;
+  height: 70%;
+  margin: 2% ;
+  border-radius: 5%;
+  font-family: valorant;
+  color: #fff;
+}
+
+.login-form input{
+  background-color: #2a525425;
+  /* color: black; */
+  font-family: valorant;
+  padding: 4%;
+  border-radius: 10%;
+  border: none;
+  margin: 5%;
+  /* border: 1px solid #2A5254; */
+  width: 70%;
+  
+ 
+}
+
+.login-form2 input{
+  background-color: #2a525442;
+  /* color: black; */
+  font-family: valorant;
+  padding: 4%;
+  border-radius: 10%;
+  border: none;
+  margin: 5%;
+  /* border: 1px solid #2A5254; */
+  width: 70%;
+  
+ 
+}
+
+.login-form input::placeholder{
+  color: #fff;
+}
+
+.login-form2 input::placeholder{
+  color: #fff;
+}
+
+.login-form button{
+  background-color: #2a5254;
+  color: #fff;
+  font-family: valorant;
+  width: 40%;
+  padding: 4%;
+  border-radius: 20%;
+  border: none;
+  margin: 5%;
+  /* border: 1px solid #2A5254; */
+}
+
+.login-form2 button{
+  background-color: #2a5254;
+  color: #fff;
+  font-family: valorant;
+  width: 40%;
+  padding: 4%;
+  border-radius: 20%;
+  border: none;
+  margin: 5%;
+  /* border: 1px solid #2A5254; */
+}
+
+
+.login-form button:hover {
+  background-color: #132F31;
+  transition: 0.5s all;
+}
+
+
+.login-form2 button:hover {
+  background-color: #132F31;
+  transition: 0.5s all;
+}
+
+.bg-login a{
+  font-family: valorant;
+  color: #fff;
+}
+
+.flex-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer-login{
+  background-color: #132F31;
+  color: #fff;
+  padding: 0.3% 0;
+  font-family: valorant;
+  text-align: center;
+}
