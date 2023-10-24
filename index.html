@@ -6,12 +6,12 @@
     <title>Consoles+</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/c+.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+    <script src="https://kit.fontawesome.com/25ff1b0eed.js" crossorigin="anonymous"></script>
 
 </head>
 <body >
-    <nav>
+    <nav class="nav-home">
         <label for="">
             <a href="index.html" >
                 <img class="logo" src="images/logo.png" alt="logo">
@@ -21,28 +21,19 @@
             <label for="" class="icons">
                 <i class='bx bx-menu'></i>
             </label>
-        
-        <ul>
+            <div class="container">
+         <i class="fa fa-bars"></i>
+        <ul class="menu">
+           
+
             <li><a href=" ">ACCEUIL</a></li>
                 <li><a href="games.html">GAMES</a></li>
                 <li><a href="magasins.html">MAGASINS</a></li>
-                <li><a href="login.html"> <img class="login" src="images/login-1.png" alt="login-1"> </a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user" style="color: #07d7b4;"></i> </a></li>
         </ul>
+    </div>
     </nav>
     
-    <!-- <nav>
-        <a href="index.html" >
-            <img class="logo" src="images/logo.png" alt="logo">
-        </a>
-        <div>
-            <ul>
-                <li><a href=" ">ACCEUIL</a></li>
-                <li><a href="games.html">GAMES</a></li>
-                <li><a href="magasins.html">MAGASINS</a></li>
-                <li><a href="login.html"> <img class="login" src="images/login-1.png" alt="login-1"> </a></li>
-            </ul>
-        </div>
-    </nav> -->
     <!-- <section >
         <div class="slide-show">
             <div class="slide">
@@ -70,7 +61,10 @@
                 <h2 class="valorant">bienvunue dans l'univers du gaming</h2>
                 <p class="underdog">Bienvenue sur Consoles plus,<br> votre destination ultime pour <br> tout ce qui concerne le gaming. 
                   <br>  Plongez dans l'univers <br> passionnant des jeux vidéo, des <br> tournois, des actualités et de la <br> communauté.</p>
-    
+                <div class="btn-login">
+                    <button class="btn">login</button>        
+                    <button class="btn">sing up</button> 
+                </div>    
             </div>
             
         </div>
@@ -135,6 +129,18 @@
         </div>
     </footer>
     
-    
+    <script>
+        function toggleSideBar()
+        {
+            console.log('clicked');
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else
+            {
+                sidebar.style.width = "250px";
+            }
+        }
+    </script>
 </body>
 </html>
