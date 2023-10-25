@@ -3,13 +3,14 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;  
   } 
 
  .logo{
 	width: 150px;
 	height: 55px;
 }
+
 
 nav{
     position: fixed;
@@ -20,7 +21,6 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    
 }   
 nav ul{
     display: flex;
@@ -70,8 +70,14 @@ nav a .fa-solid{
 .flex{
     padding: 9%;
     text-align: center;
- 
+    overflow-y: hidden;
   }
+
+  .flex h2{
+    padding: 5%;
+  }
+  
+
   .valorant{
     font-family: valorant;
     color: #fff;
@@ -131,7 +137,7 @@ nav a .fa-solid{
   }
 
   .actualites img{
-    max-width: 100%;
+    width: 100%;
     margin-right: 5%;
     border-radius: 2%;
   }
@@ -181,6 +187,8 @@ nav a .fa-solid{
     gap: 2%;
     justify-content: space-between;
     align-items: center;
+    overflow-y: hidden;
+
  
 }
 
@@ -206,7 +214,7 @@ nav a .fa-solid{
  /*----------------------games----------------*/
 
  .nav-games {
-    background: linear-gradient(to bottom, #626B53, rgba(53, 68, 54, 0.241));
+    background: #626B53;
 }
 .games{
     padding: 9%;
@@ -240,6 +248,7 @@ nav a .fa-solid{
 .grid-image div:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out; 
+    margin-bottom: 20px;
 }
 .grid-image div{
     text-align: center;
@@ -367,6 +376,9 @@ nav a .fa-solid{
   font-family: valorant;
   color: #fff;
 }
+.login-form2 h2{
+  margin-top: 5%;
+}
 
 .login-form input{
   background-color: #2a525425;
@@ -407,7 +419,6 @@ nav a .fa-solid{
   border-radius: 20%;
   border: none;
   margin: 5%;
-  /* border: 1px solid #2A5254; */
 }
 
 .login-form2 button{
@@ -421,12 +432,10 @@ nav a .fa-solid{
   margin: 5%;
 }
 
-
 .login-form button:hover {
   background-color: #132F31;
   transition: 0.5s all;
 }
-
 
 .login-form2 button:hover {
   background-color: #132F31;
@@ -444,7 +453,6 @@ nav a .fa-solid{
   align-items: center;
 }
 
-
 .footer-login{
   background-color: #132F31;
   color: #fff;
@@ -460,6 +468,7 @@ color: #1ccbd7;
 }
 
 @media (max-width:750px) {
+  
   .menu li a{
     color: #000000;
   
@@ -477,11 +486,13 @@ color: #1ccbd7;
   width: 90%;
   left: 100%; 
   display: flex;
+  display: none;
   flex-direction: column;
   backdrop-filter: blur(10px);
   margin-top: 10px;
   transition: 0.3s;
   padding: 20px;
+
 }
 
 .menu li{
@@ -491,10 +502,8 @@ color: #1ccbd7;
 }
 
 .container:hover .menu{
-
 left: 5%;
-
-
+display: block;
 }
 
 .btn-login{
@@ -502,10 +511,9 @@ left: 5%;
 }
 
 
-.menu li:hover{
-  /* background-color: #0000002b; */
-  color: 132F31;
-}
+/* .menu li a:hover{
+  color: white;
+} */
 
 /*---------MOBILE-------------*/
 @media (max-width:690px) {
@@ -523,6 +531,7 @@ left: 5%;
  .nav-home{
   position: absolute;
   width: 100%;
+
  }
 
   .btn-login{
@@ -531,7 +540,7 @@ left: 5%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 60%;
+    margin-top: 40%;
   }
   
   .btn-login p{
@@ -543,7 +552,7 @@ left: 5%;
 
   .btn {
     padding: 10px;
-    width: 30%;
+    width: 40%;
     background-color: #9dd5b658;
     border: none;
     border-radius: 15%;
@@ -560,12 +569,13 @@ left: 5%;
   }
 
   .flex h2{
-    font-size: 25px;
+    padding: 10%;
+    font-size: 18px;
     margin-top: 90px;
 
   } 
   .underdog{
-    display: none;
+    font-size: 14px;
   }
 
   .actualites{
@@ -642,16 +652,13 @@ left: 5%;
 }
 
 .games h2{
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
 
 }
 
 .game{
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3%; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -748,10 +755,18 @@ font-size: 16px;
 margin-top: 10%;
 }
 
-/*---------login-----------*/
+/*------login-----*/
 
 .login-form{
-  width: 55%;
+  width: 70%;
+}
+
+.login-form input{
+  font-family: walter turncoat;
+}
+
+.bg-login a{
+  opacity: 80%;
 }
 
 .bg-login{
@@ -762,6 +777,9 @@ margin-top: 10%;
   margin-top: 15%;
 }
 
+.login-form2 input{
+  font-family: walter turncoat;
+}
 
 .footer-login{
   padding: 8px;
@@ -769,7 +787,7 @@ margin-top: 10%;
 }
 
 .login-form2{
-width: 60%;
+width: 65%;
 }
 
 
