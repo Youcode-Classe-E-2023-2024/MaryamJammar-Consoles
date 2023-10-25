@@ -499,11 +499,13 @@ color: #1ccbd7;
   width: 100%;
   text-align: center;
 }
-}
+
 
 .container:hover .menu{
-left: 5%;
-display: block;
+  left: 5%;
+  display: block;
+  }
+  
 }
 
 .btn-login{
